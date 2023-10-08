@@ -79,4 +79,17 @@ return require("packer").startup(function(use)
 		end,
 	})
 	use("simrat39/rust-tools.nvim")
+	use({
+		"numToStr/Comment.nvim",
+		config = function()
+			require("Comment").setup()
+		end,
+	})
+	use({
+		"folke/todo-comments.nvim",
+		requires = { { "nvim-lua/plenary.nvim" } },
+		config = function()
+			require("todo-comments.nvim").setup()
+		end,
+	})
 end)
