@@ -1,5 +1,6 @@
 require("chloe.remap")
 require("chloe.set")
+require("chloe.lualine")
 require("catppuccin").setup({
 	flavour = "mocha", -- latte, frappe, macchiato, mocha
 	background = { -- :h background

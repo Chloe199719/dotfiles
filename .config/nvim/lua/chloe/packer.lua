@@ -89,7 +89,11 @@ return require("packer").startup(function(use)
 		"folke/todo-comments.nvim",
 		requires = { { "nvim-lua/plenary.nvim" } },
 		config = function()
-			require("todo-comments.nvim").setup()
+			require("todo-comments").setup()
 		end,
+	})
+	use({
+		"nvim-lualine/lualine.nvim",
+		requires = { "nvim-tree/nvim-web-devicons", opt = true },
 	})
 end)
