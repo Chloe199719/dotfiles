@@ -113,8 +113,10 @@ etc/clusto*.conf
 !.config/xfce4/terminal/terminalrc
 !.config/nvim
 !.config/nvim/*
+!.config/nvim/**/*
 !.config/tmux
 !.config/tmux/*
+!.config/tmux/**/*
 # Random arbitrary not-really-a-config file,
 # for use with hexdump
 !.config/hexdump.format
